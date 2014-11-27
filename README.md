@@ -29,11 +29,6 @@ ADD target/*.war ${CATALINA_HOME}/webapps/myapp.war
 
 EXPOSE 8080
 
-WORKDIR /data
-
-ADD run.sh /run.sh
-RUN chmod +x /*.sh
-
 CMD ${CATALINA_HOME}/bin/catalina.sh run
 ```
 
